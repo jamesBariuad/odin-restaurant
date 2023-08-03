@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 3fr 20fr 1fr;
+  background: center url(./filipino-food-aling-sosing-carinderia-18-X3.jpg);
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+ 
+  letter-spacing: 5px;
+
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.2em;
+ 
+}
+
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header ul {
+  display: flex;
+  width: 75ch;
+  gap: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: whitesmoke;
+
+  background: rgba(0, 0, 0, 0.3);
+}
+
+main > div {
+  display: flex;
+  font-size: 2em;
+  flex-direction: column;
+  gap: 20px;
+    padding: 0 2em;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+main span {
+    width: 30ch;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
