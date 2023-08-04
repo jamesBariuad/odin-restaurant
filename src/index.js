@@ -1,9 +1,14 @@
 console.log("olleh drolw hey this works");
 import './styles.css'
+import displayMenu  from './menu';
 
 function homepage() {
   const content = document.querySelector("#content");
   const header = document.createElement("header");
+
+  const restaurantName = document.createElement("h1");
+  restaurantName.textContent = "L'A CARINDERIA"
+ 
 
  
 
@@ -19,23 +24,24 @@ function homepage() {
   contactListItem.textContent = "Contact";
   ul.append(homeListItem, menuListItem, contactListItem);
 
-  header.append(nav);
+  header.append(restaurantName,nav);
   nav.appendChild(ul);
 
   content.appendChild(header);
 
   //main
   const main = document.createElement("main");
-  const restaurantName = document.createElement("h1");
-  const restaurantNameSubtext = document.createElement('span')
-  restaurantName.textContent = "L'A CARINDERIA";
-  restaurantNameSubtext.textContent = "Savor the Essence of Local Flavors: Where Every Meal Tells a Story.";
+  // const restaurantName = document.createElement("h1");
+  // const restaurantNameSubtext = document.createElement('span')
+  // restaurantName.textContent = "L'A CARINDERIA";
+  // restaurantNameSubtext.textContent = "Savor the Essence of Local Flavors: Where Every Meal Tells a Story.";
 
-  const mainDiv = document.createElement("div");
+  // const mainDiv = document.createElement("div");
   
-  mainDiv.append(restaurantName,restaurantNameSubtext,)
-  main.append(mainDiv)
+  // mainDiv.append(restaurantName,restaurantNameSubtext,)
+  // main.append(mainDiv)
   content.appendChild(main)
+  displayMenu()
 
   //footer
 
