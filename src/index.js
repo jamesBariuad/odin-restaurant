@@ -5,7 +5,6 @@ import displayHome from './home';
 import displayContactPage from './contact';
 
 function homepage() {
-  
   const body = document.querySelector('body')
   const content = document.createElement("div");
   content.setAttribute('id','content')

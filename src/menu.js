@@ -11,7 +11,7 @@ const menu = [
     name: "Grilled Tilapia",
     price: 100,
     description:
-      "Flaky fillet, expertly seasoned, served with signature sauce and veggies.",
+      "Flaky fillet, expertly seasoned, served with signature sauce.",
       image: tilapia
   },
   {
